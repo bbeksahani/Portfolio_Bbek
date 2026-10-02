@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Skills Component Styles
+   ========================================================================== */
+
+#skills {
+    background-color: var(--surface);
+    padding: 80px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    border-color: var(--primary-border);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
+.skill-card-wide {
+    grid-column: span 1;
+}
+
+.skill-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.skill-items-text {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #skills {
+        padding: 56px 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

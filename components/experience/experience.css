@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Experience Component Styles
+   ========================================================================== */
+
+#experience {
+    background-color: var(--bg);
+    padding: 80px 0;
+}
+
+.experience-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 40px;
+}
+
+.exp-header {
+    margin-bottom: 24px;
+}
+
+.exp-role-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.exp-company {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.exp-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.meta-dot {
+    color: #cbd5e1;
+}
+
+.exp-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.exp-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.bullet-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-top: 9px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 24px 20px;
+    }
+
+    .exp-company {
+        font-size: 1.25rem;
+    }
+
+    .exp-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .meta-dot {
+        display: none;
+    }
+}

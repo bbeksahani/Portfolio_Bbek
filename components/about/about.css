@@ -1,0 +1,90 @@
+/* ==========================================================================
+   About Component Styles
+   ========================================================================== */
+
+#about {
+    background-color: var(--surface);
+    padding: 80px 0;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-body {
+    margin-top: 20px;
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-body p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+/* 4 Focus Domain Cards Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.about-card:hover {
+    border-color: var(--primary-border);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.about-card-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    background-color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.about-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.about-card-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Responsive Breakdown */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #about {
+        padding: 56px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
